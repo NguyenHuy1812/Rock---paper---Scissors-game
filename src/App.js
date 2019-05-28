@@ -114,13 +114,15 @@ class myGameHere extends React.Component {
 
   render() {
     return (
-      <Container style={{ width: '100%', height: '40%' }}>
+      <Container style={{ width: '100%', height: '80vh' }}>
         <Row className="justify-content-md-center" >
           <Col md lg="8">
             <Card>
               <Card.Img style={{ width: '100%', height: '50%' }} variant="top" src="https://cdn-images-1.medium.com/max/600/1*aZYAQMfiaSiJVucrbiyKqA.gif" />
+              <div style={{ display: "inline-block" >
               <Card.Img style={{ width: '200px', height: '200px' }} variant="top" src={this.renderIMGChoice()} />
               <Card.Img style={{ width: '200px', height: '200px' }} variant="top" src={this.renderIMGComputerChoice()} />
+              </div>
               <Card.Body>
                 <Card.Text style={{ display: "center" }}>
                   {this.renderChoiceOfuser()}
